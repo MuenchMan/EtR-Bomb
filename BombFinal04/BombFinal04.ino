@@ -21,12 +21,11 @@ char keysTWO[ROWSTWO][COLSTWO] = {
   {'7', '8', '9'},
   {'*', '0', '#'}
 };
-byte rowPinsONE[ROWSONE] = {25, 24, 23, 22}; //connect to the row pinouts of the keypad
-byte colPinsONE[COLSONE] = {28, 27, 26}; //connect to the column pinouts of the keypad
+byte rowPinsONE[ROWSONE] = {28, 26, 24, 22}; //connect to the row pinouts of the keypad
+byte colPinsONE[COLSONE] = {34, 32, 30}; //connect to the column pinouts of the keypad
 Keypad keypadONE = Keypad( makeKeymap(keysONE), rowPinsONE, colPinsONE, ROWSONE, COLSONE );
-
-byte rowPinsTWO[ROWSTWO] = {5, 4, 3, 2}; //connect to the row pinouts of the keypad
-byte colPinsTWO[COLSTWO] = {8, 7, 6}; //connect to the column pinouts of the keypad
+byte rowPinsTWO[ROWSTWO] = {44, 42, 40, 38}; //connect to the row pinouts of the keypad
+byte colPinsTWO[COLSTWO] = {50, 48, 46}; //connect to the column pinouts of the keypad
 Keypad keypadTWO = Keypad( makeKeymap(keysTWO), rowPinsTWO, colPinsTWO, ROWSTWO, COLSTWO );
 
 // ------ LEDs
