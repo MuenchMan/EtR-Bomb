@@ -11,7 +11,7 @@ void loop()
 {
   Wire.beginTransmission(0x71); // enter current address
   Wire.write(0x80); // code for changing address
-  Wire.write(0x74); // new address
+  Wire.write(0x75); // new address
   Wire.endTransmission();
 }  // -------- END OF VOID LOOP --------
 
